@@ -1,3 +1,3 @@
 # Maven_Assignment
 This is the assignment of maven of group 1.I have ignored the target folder, .iml file and the idea file using .gitignore....
-updating
+updating it

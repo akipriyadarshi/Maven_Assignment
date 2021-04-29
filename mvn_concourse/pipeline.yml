@@ -10,4 +10,4 @@ jobs:
   - get: source-code-resource
     trigger: true
   - task: build-and-verify
-    file: source-code-resource/tasks/mvn_compile.yml    
+    file: source-code-resource/mvn_concourse/tasks/mvn_compile.yml    

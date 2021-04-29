@@ -1,0 +1,13 @@
+---
+resources:
+- name: source-code-resource
+  type: git
+  source:
+    uri: https://github.com/akipriyadarshi/Maven_Assignment.git
+jobs:
+- name: job-build
+  plan:
+  - get: source-code-resource
+    trigger: true
+  - task: build-and-verify
+    file: source-code-resource/tasks/mvn_compile.yml    

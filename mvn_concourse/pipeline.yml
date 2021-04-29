@@ -9,5 +9,11 @@ jobs:
   plan:
   - get: source-code-resource
     trigger: true
-  - task: build-and-verify
+  - task: building
     file: source-code-resource/mvn_concourse/tasks/mvn_compile.yml    
+- name: job-test
+  plan:
+  - get: source-code-resource
+    trigger: true
+  - task: testing
+    file: source-code-resource/mvn_concourse/tasks/mvn_test.yml 
